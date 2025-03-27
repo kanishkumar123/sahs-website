@@ -1,10 +1,10 @@
 import React from "react";
-import { FaUsers, FaBook, FaBookOpen, FaNewspaper } from "react-icons/fa"; 
+import { FaUsers, FaBook, FaLaptop, FaNewspaper } from "react-icons/fa";
 import "./CardSection.css";
 
 const cards = [
   {
-    title: "COMMITTEE",
+    title: "Life @ SAHS",
     icon: <FaUsers size={40} />,
     image: "src/assets/Steering-Committee-Waydev.jpg",
   },
@@ -14,8 +14,8 @@ const cards = [
     image: "src/assets/20170509_Eng_Library_DJA_012_3.jpg",
   },
   {
-    title: "COURSEWARE",
-    icon: <FaBookOpen size={40} />,
+    title: "E-Learning",
+    icon: <FaLaptop size={40} />,
     image: "src/assets/photo-1606568156390-8f4edb5ef31f.jpeg",
   },
   {

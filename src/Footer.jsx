@@ -58,7 +58,7 @@ const Footer = () => {
             <li>📝 Blogs</li>
             <li>📜 Policies</li>
             <li>🏆 Awards</li>
-            <li>📄 AICTE Mandatory Disclosure</li>
+            <li>📄 RCI Mandatory Disclosure</li>
             <li>📜 Certificates & Verification</li>
             <li>📕 Code of Conduct</li>
           </ul>

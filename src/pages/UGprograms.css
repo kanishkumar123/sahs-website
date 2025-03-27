@@ -1,0 +1,135 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Page Container */
+.container {
+    max-width: 1200px;
+    margin: 12vh auto 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title */
+.title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #002147;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-shadow: 2px 2px 8px rgba(0, 33, 71, 0.3);
+}
+
+/* Programme List */
+.programme-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 15px;
+    list-style: none;
+}
+
+/* Programme Item */
+.programme-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Expanded Style */
+.programme-item.expanded {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(0, 123, 255, 0.3);
+}
+
+/* Hover Effect */
+.programme-item:hover {
+    transform: translateY(-3px);
+    background: #007bff;
+    color: white;
+    box-shadow: 0px 8px 16px rgba(0, 123, 255, 0.3);
+}
+
+/* Programme Title */
+.programme-title {
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Programme Details */
+.programme-details {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: left;
+    opacity: 0;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, padding 0.3s ease-in-out;
+    overflow: hidden;
+    width: 100%;
+    line-height: 1.8;
+    padding: 0px 15px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+}
+
+/* When Expanded */
+.programme-item.expanded .programme-details {
+    opacity: 1;
+    max-height: 300px;
+    padding: 15px;
+}
+
+/* Styling for details text */
+.programme-details p {
+    margin: 8px 0;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Last item without border */
+.programme-details p:last-child {
+    border-bottom: none;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 100px;
+    }
+
+    .programme-list {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .programme-item {
+        padding: 15px;
+    }
+
+    .programme-title {
+        font-size: 16px;
+    }
+}

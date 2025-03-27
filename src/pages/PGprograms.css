@@ -1,0 +1,68 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Page Container */
+.container {
+    max-width: 1200px;
+    margin: 12vh auto 40px auto; /* Push down dynamically */
+    padding: 20px;
+    text-align: center;
+}
+/* Title */
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #002147;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Programme List */
+.programme-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    padding: 10px;
+    list-style: none;
+}
+
+/* Programme Item */
+.programme-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    color: #002147;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.programme-item:hover {
+    background: #007bff;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 100px;
+    }
+
+    .programme-list {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
