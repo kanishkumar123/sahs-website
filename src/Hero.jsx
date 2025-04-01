@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
+import "./Hero.css"; // Ensure Hero.css is imported for styling
+
 import "./Hero.css";
 
 const images = [
-  "/DJI_0416.jpg",
-  "/DJI_0437.jpg",
-  "/DSC_7124.JPG",
-  "/university.jpg",
+  `${import.meta.env.BASE_URL}DJI_0416.jpg`,
+  `${import.meta.env.BASE_URL}DJI_0437.jpg`,
+  `${import.meta.env.BASE_URL}DSC_7124.JPG`,
+  `${import.meta.env.BASE_URL}university.jpg`,
 ];
-
 const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -32,6 +33,8 @@ const Hero = () => {
       ))}
       <div className="hero-overlay">
         <h2>SAHS Admission Open</h2>
+        <button className="cta-button">Apply Now</button>{" "}
+        {/* Added call-to-action button */}
       </div>
     </div>
   );
