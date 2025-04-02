@@ -18,6 +18,9 @@ import Header from "./Header";
 import AdmissionProcedure from "./pages/AdmissionProcedure";
 import { MantineProvider } from "@mantine/core";
 import CourseDetailsPage from "./pages/CourseDetails";
+import Founder from "./pages/Founder";
+import ChancellorProfile from "./pages/Chancellor";
+import VisionMission from "./pages/VisionMission";
 
 // ✅ Home page with Header and Navbar
 const Home = () => {
@@ -111,6 +114,33 @@ const App = () => {
               <>
                 <OtherPages />
                 <CourseDetailsPage />
+              </>
+            }
+          />
+          <Route
+            path="/founder"
+            element={
+              <>
+                <OtherPages />
+                <Founder />
+              </>
+            }
+          />
+          <Route
+            path="/chancellor"
+            element={
+              <>
+                <OtherPages />
+                <ChancellorProfile />
+              </>
+            }
+          />
+          <Route
+            path="/vision-mission"
+            element={
+              <>
+                <OtherPages />
+                <VisionMission />
               </>
             }
           />
