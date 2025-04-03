@@ -11,14 +11,14 @@
 
 /* Body Background */
 body {
-  padding-top: 100px; /* Space for the top bar */
-  background-color: #002147; /* Updated to use theme color */
+  padding-top: 100px;
+  background-color: #002147;
 }
 
 /* Top Bar */
 .top-bar {
-  background-color: #002147; /* Updated to use theme color */
-  color: #ffffff; /* Updated to use theme color */
+  background-color: #002147;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +65,7 @@ body {
   justify-content: center;
   width: 100%;
   padding: 15px 0;
-  background-color: #002147; /* Updated to use theme color */
+  background-color: #002147;
 }
 
 /* Navbar Links */
@@ -82,9 +82,9 @@ body {
   color: #ffffff; /* Updated to use theme color */
 
   font-weight: 600;
-  font-size: 16px; /* Updated to use theme size */
+  font-size: 16px;
 
-  padding: 16px; /* Updated to use theme padding */
+  padding: 16px;
 
   transition: all 0.3s ease-in-out;
 }
@@ -102,7 +102,7 @@ body {
   position: absolute;
   transform: translateY(10px);
   transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out; /* Ensure smooth transition */
-  top: 100%;
+  top: calc(100% + 15px);
   left: 0;
   background: rgb(0, 33, 71, 0.5);
   backdrop-filter: blur(15px);
@@ -114,11 +114,9 @@ body {
   padding: 20px;
   width: max-content;
   min-width: 200px;
-  opacity: 0; /* Hidden by default */
-  visibility: hidden; /* Hidden by default */
-  z-index: 1000; /* Ensure dropdown is above other elements */
-
-  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
 }
 
 .nav-item {

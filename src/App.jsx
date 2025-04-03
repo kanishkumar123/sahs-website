@@ -21,6 +21,9 @@ import CourseDetailsPage from "./pages/CourseDetails";
 import Founder from "./pages/Founder";
 import ChancellorProfile from "./pages/Chancellor";
 import VisionMission from "./pages/VisionMission";
+import Scholarships from "./pages/Scholarships";
+import Administrators from "./pages/Administrators";
+import Accreditations from "./pages/Accreditations";
 
 // ✅ Home page with Header and Navbar
 const Home = () => {
@@ -141,6 +144,33 @@ const App = () => {
               <>
                 <OtherPages />
                 <VisionMission />
+              </>
+            }
+          />
+          <Route
+            path="/scholarships"
+            element={
+              <>
+                <OtherPages />
+                <Scholarships />
+              </>
+            }
+          />
+          <Route
+            path="/administrators"
+            element={
+              <>
+                <OtherPages />
+                <Administrators />
+              </>
+            }
+          />
+          <Route
+            path="/accreditations"
+            element={
+              <>
+                <OtherPages />
+                <Accreditations />
               </>
             }
           />
