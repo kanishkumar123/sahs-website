@@ -106,7 +106,7 @@ const Accreditations = () => {
 
   return (
     <div className="accreditation-container">
-      <h2 className="accreditation-title">Accreditations & Recognitions</h2>
+      <h2 className="title">Accreditations & Recognitions</h2>
       <div className="accreditation-grid">
         {accreditations.map((item, index) => (
           <div

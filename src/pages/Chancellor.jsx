@@ -7,7 +7,7 @@ const ChancellorProfile = () => {
   return (
     <div className="chancellor-container">
       <div className="chancellor-header">
-        <h1>Meet our Chancellor</h1>
+        <h1 className="title">Meet our Chancellor</h1>
       </div>
       <div className="chancellor-content">
         <div className="chancellor-image-container">

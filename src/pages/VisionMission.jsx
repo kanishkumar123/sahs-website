@@ -1,5 +1,5 @@
 import React from "react";
-import "./VisionMission.css";
+import "./VisionMission.css"; // Import your CSS file
 
 const VisionMission = () => {
   return (
@@ -9,7 +9,7 @@ const VisionMission = () => {
         (Deemed to be University under section 3 of the UGC Act 1956)
       </p>
 
-      <div className="card">
+      <div className="vision-mission-card">
         <h2 className="heading">VISION</h2>
         <p>
           To impart knowledge to nurture leaders driven by research, innovation
@@ -18,7 +18,7 @@ const VisionMission = () => {
         </p>
       </div>
 
-      <div className="card">
+      <div className="vision-mission-card">
         <h2 className="heading">MISSION</h2>
         <p>
           To empower learners through world-class, multidisciplinary education
@@ -26,7 +26,7 @@ const VisionMission = () => {
         </p>
       </div>
 
-      <div className="card">
+      <div className="vision-mission-card">
         <h2 className="heading">QUALITY POLICY</h2>
         <p>
           <strong>

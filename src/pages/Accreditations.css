@@ -6,7 +6,7 @@
 }
 
 /* Title Styling */
-.accreditation-title {
+.title {
   font-size: 28px;
   font-weight: bold;
   color: #1d4f91;
@@ -19,10 +19,9 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Underline Effect */
-.accreditation-title::after {
+.title::after {
   content: "";
-  width: 80px;
+  width: 80%;
   height: 4px;
   background-color: #ffcc00;
   position: absolute;

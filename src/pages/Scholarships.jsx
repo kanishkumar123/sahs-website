@@ -48,7 +48,7 @@ const Scholarships = () => {
 
   return (
     <div className="scholarship-container">
-      <h2 className="scholarship-title">SCHOLARSHIP</h2>
+      <h2 className="title">SCHOLARSHIP</h2>
       <div className="scholarship-cards">
         {scholarships.map((scholarship, index) => (
           <div

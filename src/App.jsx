@@ -16,14 +16,15 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import Header from "./Header";
 import AdmissionProcedure from "./pages/AdmissionProcedure";
-import { MantineProvider } from "@mantine/core";
 import CourseDetailsPage from "./pages/CourseDetails";
 import Founder from "./pages/Founder";
 import ChancellorProfile from "./pages/Chancellor";
-import VisionMission from "./pages/VisionMission";
 import Scholarships from "./pages/Scholarships";
 import Administrators from "./pages/Administrators";
 import Accreditations from "./pages/Accreditations";
+import VisionMission from "./pages/VisionMission";
+import { MantineProvider } from "@mantine/core"; // Import MantineProvider
+
 
 // ✅ Home page with Header and Navbar
 const Home = () => {

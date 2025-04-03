@@ -48,7 +48,7 @@ const administrators = [
 const Administrators = () => {
   return (
     <div className="admin-container">
-      <h2 className="admin-title">SAHS Administration</h2>
+      <h2 className="title">SAHS Administration</h2>
       <div className="admin-grid">
         {administrators.map((admin, index) => (
           <div key={index} className="admin-card">

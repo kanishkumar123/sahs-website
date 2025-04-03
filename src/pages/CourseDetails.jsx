@@ -257,7 +257,7 @@ const CourseDetails = () => {
 
   return (
     <div className="course-details-container">
-      <h2>Course Details</h2>
+      <h2 className="title">Course Details</h2>
 
       {/* Tabs */}
       <div className="course-tabs" data-active={activeTab}>

@@ -1,110 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #1a1a1a, #3a3a3a);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #1a1a1a, #3a3a3a);
 }
 
 /* Individual Card */
 .card {
-    position: relative;
-    width: 280px;
-    height: 180px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  width: 350px !important; /* Force square shape */
+  height: 200px !important;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Glassmorphism Overlay */
+/* Background Image */
+.card-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(5px); /* Adds blur effect */
+  transform: scale(1.1); /* Prevents visible edges after blur */
+  z-index: 1;
+}
+
+/* Dark Transparent Overlay */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  z-index: 2;
+}
+
+/* Content Overlay */
 .card .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
-    border-radius: 12px;
+  position: relative;
+  z-index: 3; /* Ensure it stays above the image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
 }
 
 /* Icon */
 .card .icon {
-    font-size: 32px;
-    color: #00c8ff; /* Vibrant Blue */
-    margin-bottom: 8px;
-    transition: transform 0.3s ease-in-out, color 0.3s;
+  font-size: 32px;
+  color: #00ffff; /* Vibrant Blue */
+  margin-bottom: 8px;
+  transition: transform 0.3s ease-in-out, color 0.3s;
 }
 
 /* Title */
 .card h3 {
-    font-size: 20px;
-    font-weight: 700;
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-    transition: color 0.3s ease-in-out;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  transition: color 0.3s ease-in-out;
 }
 
 /* Hover Effects */
 .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.4);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 255, 255, 0.4);
 }
 
-.card:hover .overlay {
-    background: rgba(0, 0, 0, 0.7);
-    transform: scale(1.02);
+.card:hover::before {
+  background: rgba(0, 0, 0, 0.7); /* Darken on hover */
 }
 
 .card:hover .icon {
-    transform: rotate(360deg);
-    color: #ffcc00; /* Gold */
+  transform: rotate(360deg);
+  color: #ffcc00; /* Gold */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .card {
-        width: 90%;
-        height: 160px;
-    }
+  .card {
+    width: 90%;
+    height: 160px;
+  }
 
-    .card h3 {
-        font-size: 18px;
-    }
+  .card h3 {
+    font-size: 18px;
+  }
 
-    .card .icon {
-        font-size: 28px;
-    }
+  .card .icon {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 480px) {
-    .card {
-        width: 100%;
-        height: 150px;
-    }
+  .card {
+    width: 100%;
+    height: 150px;
+  }
 
-    .card h3 {
-        font-size: 16px;
-    }
+  .card h3 {
+    font-size: 16px;
+  }
 
-    .card .icon {
-        font-size: 24px;
-    }
+  .card .icon {
+    font-size: 24px;
+  }
 }

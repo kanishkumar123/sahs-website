@@ -12,7 +12,31 @@
   animation: fadeIn 0.8s ease-in-out;
 }
 
-h1,
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1d4f91;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title::after {
+  content: "";
+  width: 80%;
+  height: 4px;
+  background-color: #ffcc00;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
 h2 {
   color: #002147;
   text-align: center;

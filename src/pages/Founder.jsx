@@ -12,7 +12,7 @@ const Founder = () => {
   return (
     <section className="founder-container">
       <div className="founder-header">
-        <h1>Meet Our Founder</h1>
+        <h1 className="title">Meet Our Founder</h1>
         <p>Inspiring leadership that shaped our institution's vision</p>
       </div>
       <div className="founder-content">

@@ -32,8 +32,8 @@ const Hero = () => {
         ></div>
       ))}
       <div className="hero-overlay">
-        <h2>SAHS Admission Open</h2>
-        <button className="cta-button">Apply Now</button>{" "}
+        <h2>School of Allied Health Science</h2>
+        <button className="admission-button">Admission Open 2025-26 →</button>
         {/* Added call-to-action button */}
       </div>
     </div>

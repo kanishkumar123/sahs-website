@@ -5,7 +5,9 @@ const AboutVMRF = () => {
   return (
     <div className="about-vmrf">
       <div className="container">
-        <h1>About Vinayaka Mission’s Research Foundation (VMRF)</h1>
+        <h1 className="title">
+          About Vinayaka Mission’s Research Foundation (VMRF)
+        </h1>
 
         <section className="about-section">
           <h2>Our Legacy and Growth</h2>
@@ -35,55 +37,20 @@ const AboutVMRF = () => {
         </section>
 
         <section className="academic-landscape">
-          <div className="container">
-            <h2>Academic Landscape</h2>
-            <p>
-              Vinayaka Mission’s Research Foundation boasts an extensive
-              academic landscape comprising 13 Colleges and 12 Schools,
-              including:
-            </p>
-            <ul className="academic-list">
-              <li>
-                <span className="highlight">3 Medical Colleges</span>
-              </li>
-              <li>
-                <span className="highlight">2 Engineering Colleges</span>
-              </li>
-              <li>
-                <span className="highlight">1 Dental College</span>
-              </li>
-              <li>
-                <span className="highlight">1 Pharmacy College</span>
-              </li>
-              <li>
-                <span className="highlight">1 Homeopathy Medical College</span>
-              </li>
-              <li>
-                <span className="highlight">
-                  3 Physiotherapy Colleges/Schools
-                </span>
-              </li>
-              <li>
-                <span className="highlight">3 Nursing Colleges</span>
-              </li>
-              <li>
-                <span className="highlight">
-                  2 Arts & Science Colleges/Schools
-                </span>
-              </li>
-              <li>
-                <span className="highlight">
-                  5 Schools of Allied Health Sciences
-                </span>
-              </li>
-              <li>
-                <span className="highlight">
-                  1 School dedicated to Law, Physical Education, Rehabilitation
-                  and Behavioral Science, and Economic and Public Policy
-                </span>
-              </li>
-            </ul>
-          </div>
+          <h2>Academic Landscape</h2>
+          <p>
+            Vinayaka Mission’s Research Foundation (Deemed to be University)
+            boasts an extensive academic landscape comprising 13 Colleges and 12
+            Schools, including 3 Medical Colleges, 2 Engineering Colleges, 1
+            Dental College, 1 Pharmacy College, 1 Homeopathy Medical College, 3
+            Physiotherapy Colleges/Schools, 3 Nursing Colleges, 2 Arts & Science
+            Colleges/Schools, 5 Schools of Allied Health Sciences, and 1 School
+            dedicated to Law, Physical Education, Rehabilitation and Behavioral
+            Science, and Economic and Public Policy. These institutions are
+            spread across four locations in Salem and Chennai Districts in Tamil
+            Nadu, as well as Puducherry and Karaikal of the Union Territory of
+            Puducherry.
+          </p>
         </section>
 
         <section className="about-section">

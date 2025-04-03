@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-.admin-title {
+.title {
   font-size: 28px;
   font-weight: bold;
   color: #1d4f91;
@@ -15,15 +15,12 @@
   position: relative;
   display: inline-block;
   padding-bottom: 5px;
-
-  /* Text shadow for depth */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Underline Effect */
-.admin-title::after {
+.title::after {
   content: "";
-  width: 220px;
+  width: 80%;
   height: 4px;
   background-color: #ffcc00;
   position: absolute;

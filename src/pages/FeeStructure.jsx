@@ -171,7 +171,7 @@ const FeeStructure = () => {
 
   return (
     <div className="fee-structure-container">
-      <h2>Fee Structure (2025-2026)</h2>
+      <h2 className="title">Fee Structure (2025-2026)</h2>
 
       {/* Tabs for UG and PG */}
       <div className="fee-tabs" data-active={activeTab}>

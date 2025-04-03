@@ -35,7 +35,7 @@ const AdmissionProcedure = () => {
 
   return (
     <div className="admission-procedure-container">
-      <h2>Admission Procedure (2025-2026)</h2>
+      <h2 className="title">Admission Procedure (2025-2026)</h2>
 
       {/* Tabs for UG and PG */}
       <div className="admission-tabs" data-active={activeTab}>

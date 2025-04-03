@@ -5,7 +5,7 @@ const AboutSahs = () => {
   return (
     <div className="about-sahs-container">
       <div className="container">
-        <h1>About US – SAHS, VMKVMCH Campus</h1>
+        <h1 className="title">About US – SAHS, VMKVMCH Campus</h1>
 
         <section className="about-section">
           <h2>Overview</h2>
