@@ -3,6 +3,7 @@
   max-width: 1200px;
   margin: 50px auto;
   text-align: center;
+  /* animation: fadeIn 0.8s ease-in-out; */
 }
 
 /* Title Styling */
@@ -37,6 +38,7 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   justify-content: center;
+  margin-top: 40px;
 }
 
 /* Accreditation Card */

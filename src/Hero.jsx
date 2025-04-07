@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./Hero.css"; // Ensure Hero.css is imported for styling
-
 import "./Hero.css";
 
 const images = [

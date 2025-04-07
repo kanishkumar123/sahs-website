@@ -1,4 +1,7 @@
+/* eslint-disable no-unused-vars */
+
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import "./Accreditations.css";
 import image1 from "../assets/Naac.jpg";
 import image2 from "../assets/Nirf.jpg";
@@ -107,14 +110,27 @@ const Accreditations = () => {
   return (
     <div className="accreditation-container">
       <h2 className="title">Accreditations & Recognitions</h2>
-      <div className="accreditation-grid">
+      <motion.div
+        className="accreditation-grid"
+        initial="hidden"
+        animate="show"
+        variants={{
+          hidden: { opacity: 0 },
+          show: { opacity: 1, transition: { staggerChildren: 0.2 } },
+        }}
+      >
         {accreditations.map((item, index) => (
-          <div
+          <motion.div
             key={index}
             className={`accreditation-card ${
               expandedIndex === index ? "expanded" : ""
             }`}
             onClick={() => toggleExpand(index)}
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+            }}
+            whileHover={{ boxShadow: "0px 0px 20px rgba(255, 215, 0, 0.5)" }}
           >
             <img
               src={item.image}
@@ -122,15 +138,19 @@ const Accreditations = () => {
               className="accreditation-image"
             />
             <h3 className="accreditation-name">{item.title}</h3>
-            <div
+            <motion.div
               className="accreditation-content"
-              style={{ maxHeight: expandedIndex === index ? "100px" : "0px" }}
+              animate={{
+                maxHeight: expandedIndex === index ? "100px" : "0px",
+                opacity: expandedIndex === index ? 1 : 0,
+              }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
             >
               <p>{item.description}</p>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

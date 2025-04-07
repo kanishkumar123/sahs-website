@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./PGPrograms.css";
 
 const PGProgrammes = () => {
@@ -86,6 +86,8 @@ const PGProgrammes = () => {
   const [selectedProgram, setSelectedProgram] = useState(null);
   const [isModalClosing, setIsModalClosing] = useState(false);
 
+  const contentRefs = useRef([]);
+
   const toggleExpand = (index) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
@@ -97,6 +99,22 @@ const PGProgrammes = () => {
       setIsModalClosing(false);
     }, 300);
   };
+
+  // Update height dynamically when the component renders or expanded index changes
+  useEffect(() => {
+    if (expandedIndex !== null) {
+      const content = contentRefs.current[expandedIndex];
+      if (content) {
+        content.style.height = `${content.scrollHeight}px`; // Set height dynamically based on content
+      }
+    } else {
+      contentRefs.current.forEach((content) => {
+        if (content) {
+          content.style.height = "0px"; // Reset height when collapsed
+        }
+      });
+    }
+  }, [expandedIndex]);
 
   return (
     <div className="container">
@@ -111,35 +129,35 @@ const PGProgrammes = () => {
             onClick={() => toggleExpand(index)}
           >
             <div className="programme-title">{programme.name}</div>
-            {expandedIndex === index && (
-              <div className="expanded-content">
-                <p>
-                  <strong>Duration:</strong> {programme.duration}
-                </p>
-                <p>
-                  <strong>Degree Level:</strong> {programme.degreeLevel}
-                </p>
-                <p>
-                  <strong>Fees:</strong> {programme.fees}
-                </p>
-                <p>
-                  <strong>Intake:</strong> {programme.intake}
-                </p>
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setSelectedProgram(programme);
-                  }}
-                >
-                  Know More
-                </button>
-              </div>
-            )}
+            <div
+              ref={(el) => (contentRefs.current[index] = el)}
+              className="expanded-content"
+            >
+              <p>
+                <strong>Duration:</strong> {programme.duration}
+              </p>
+              <p>
+                <strong>Degree Level:</strong>{" "}
+                {programme.degreeLevel || "Undergraduate"}
+              </p>
+              <p>
+                <strong>Fees:</strong> {programme.fees}
+              </p>
+
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setSelectedProgram(programme);
+                }}
+              >
+                Know More
+              </button>
+            </div>
           </div>
         ))}
       </div>
 
-      {/* Modal Popup */}
+      {/* Modal */}
       {selectedProgram && (
         <div
           className={`modal-overlay ${isModalClosing ? "hide" : ""}`}
@@ -154,7 +172,8 @@ const PGProgrammes = () => {
               <strong>Duration:</strong> {selectedProgram.duration}
             </p>
             <p>
-              <strong>Degree Level:</strong> {selectedProgram.degreeLevel}
+              <strong>Degree Level:</strong>{" "}
+              {selectedProgram.degreeLevel || "Undergraduate"}
             </p>
             <p>
               <strong>Fees:</strong> {selectedProgram.fees}
@@ -162,6 +181,25 @@ const PGProgrammes = () => {
             <p>
               <strong>Intake:</strong> {selectedProgram.intake}
             </p>
+            <p>
+              <strong>Eligibility:</strong>{" "}
+              {selectedProgram.eligibility || "N/A"}
+            </p>
+            <p>
+              <strong>Overview:</strong> {selectedProgram.overview || "N/A"}
+            </p>
+
+            {selectedProgram.careerProspects && (
+              <>
+                <h3>Career Prospects:</h3>
+                <ul>
+                  {selectedProgram.careerProspects.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </>
+            )}
+
             <button onClick={handleCloseModal}>Close</button>
           </div>
         </div>

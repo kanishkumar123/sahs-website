@@ -1,14 +1,30 @@
-/* ChancellorProfile.css */
-
-/* Overall container */
 .chancellor-container {
   max-width: 1200px;
   margin: 40px auto;
   padding: 40px;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
   animation: fadeIn 0.8s ease-in-out;
+}
+
+.chancellor-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.chancellor-header h1 {
+  font-size: 32px;
+  color: #002147;
+  font-weight: bold;
+}
+
+.chancellor-header p {
+  font-size: 18px;
+  color: #555;
 }
 
 .title {
@@ -36,134 +52,87 @@
   border-radius: 2px;
 }
 
-/* Header styling */
-.chancellor-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.chancellor-header h1 {
-  font-size: 34px;
-  color: #001f3f;
-  font-weight: 700;
-}
-
 .chancellor-content {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: left;
-  gap: 24px;
+  justify-content: center;
+  gap: 40px;
   margin-bottom: 30px;
-  width: 100%; /* Ensure content spans full width */
-}
-
-.chancellor-image-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.chancellor-image-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20px;
-  font-size: 20px;
-  color: #333;
-  font-weight: 600;
-  margin-bottom: 10px;
-  text-align: center;
 }
 
 .chancellor-image {
-  width: 300px;
+  width: 320px;
   border-radius: 12px;
   object-fit: cover;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
 }
 
 .chancellor-image:hover {
-  transform: scale(1.08);
+  transform: scale(1.05);
 }
 
 .chancellor-info {
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  padding: 24px;
+  background: #0056b3;
+  padding: 16px;
   border-radius: 16px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
   color: #fff;
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
 .chancellor-info:hover {
-  transform: scale(1.03);
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .chancellor-name {
-  font-size: 28px;
+  font-size: 26px;
+  color: #fff;
   font-weight: bold;
 }
 
 .chancellor-role {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff8a;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-/* Description points */
 .chancellor-description {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  max-width: 850px;
-  text-align: left !important;
+  gap: 15px;
 }
 
 .chancellor-point {
   display: flex;
-  /* align-items: flex-start; */
-  gap: 14px;
-  padding: 18px;
-  background: #f8f9fa;
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .chancellor-point:hover {
-  transform: translateY(-4px);
-  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Icon styling */
-.chancellor-point .icon {
-  font-size: 1.6rem;
-  color: #004aad;
-  margin-top: 5px;
-}
+@media (max-width: 900px) {
+  .chancellor-content {
+    flex-direction: column;
+    text-align: center;
+  }
 
-h3 {
-  font-size: 24px;
-  color: #004aad;
-  font-weight: bold;
-  text-align: center;
-  width: 100%;
-}
+  .chancellor-image {
+    width: 250px;
+  }
 
-/* Paragraph text alignment */
-p {
-  text-align: left;
-  font-size: 16px;
-  line-height: 1.6;
+  .chancellor-point {
+    text-align: left;
+  }
 }

@@ -1,31 +1,54 @@
 import React from "react";
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faXTwitter,
+  faInstagram,
+  faYoutube,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-top">
-        <h2 className="footer-heading">
-          <span>VMRF - Variyar Test 2025-26</span>
-        </h2>
-        <p className="footer-subheading">
-          <em>Ignite Your Ambition with our SCHOLARSHIP TEST!</em>
-        </p>
-        <button className="admission-button">Admission Open 2025-26 →</button>
+      <div className="footer-row">
+        <div className="footer-top">
+          <h2 className="footer-heading">
+            <span>School of Allied Health Sciences</span>
+          </h2>
+          <p className="footer-subheading">
+            <em>
+              📍 Sankari Main Road (NH-47), Ariyanoor, Salem - 636 308,
+              Tamilnadu, India.
+            </em>
+          </p>
+          {/* <button className="admission-button">Admission Open 2025-26 →</button> */}
+        </div>
+        <div className="footer-top">
+          <h2 className="footer-heading">
+            <span>Vinayaka Missions Research Foundation</span>
+          </h2>
+          <p className="footer-subheading">
+            <em>
+              📍 Sankari Main Road (NH-47), Ariyanoor, Salem - 636 308,
+              Tamilnadu, India.
+            </em>
+          </p>
+          {/* <button className="admission-button">Admission Open 2025-26 →</button> */}
+        </div>
+        <div className="footer-top">
+          <h2 className="footer-heading">
+            <span>VMKV Medical College & Hospital</span>
+          </h2>
+          <p className="footer-subheading">
+            <em>📍 Chinna Seeragapadi, Salem – 636 308, Tamil Nadu, India</em>
+          </p>
+          {/* <button className="admission-button">Admission Open 2025-26 →</button> */}
+        </div>
       </div>
 
       <div className="footer-content">
-        <div className="footer-section">
-          <h3>🏛 VMKV Medical College</h3>
-          <p>📞 8015011156</p>
-          <p style={{ color: "#0D1B2A" }}>.</p>
-          <p style={{ color: "#0D1B2A" }}>.</p>
-          <p>📧 admissions@sahs.ac.in</p>
-          <p style={{ color: "#0D1B2A" }}>.</p>
-          <p style={{ color: "#0D1B2A" }}>.</p>
-          <p>📍 Chinna Seeragapadi, Salem – 636 308, Tamil Nadu, India</p>
-        </div>
-
         <div className="footer-section">
           <h3>🔗 QUICK LINKS</h3>
           <ul>
@@ -33,17 +56,12 @@ const Footer = () => {
             <li>📌 Placements</li>
             <li>📌 Examination Calendar</li>
             <li>📌 Graduation Day</li>
-            <li>📌 SC / ST Cell</li>
-            <li>📌 BoM Authorities</li>
           </ul>
         </div>
 
         <div className="footer-section">
           <h3>🛠 HELP & SUPPORT</h3>
           <ul>
-            <li>🔑 Student / Parent Login</li>
-            <li>🔑 Faculty Login</li>
-            <li>✉️ Feedback</li>
             <li>🚫 Anti-ragging Committee</li>
             <li>⚖️ Grievance Redressal Committee</li>
             <li>📢 Internal Complaints Committee</li>
@@ -54,13 +72,10 @@ const Footer = () => {
         <div className="footer-section">
           <h3>📚 MEDIA & RESOURCES</h3>
           <ul>
-            <li>📸 sahs @ Media</li>
+            <li>📸 SAHS @ Media</li>
             <li>📝 Blogs</li>
             <li>📜 Policies</li>
             <li>🏆 Awards</li>
-            <li>📄 RCI Mandatory Disclosure</li>
-            <li>📜 Certificates & Verification</li>
-            <li>📕 Code of Conduct</li>
           </ul>
         </div>
       </div>
@@ -68,11 +83,41 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>Copyrights © 2025 sahs. All rights reserved.</p>
         <div className="social-icons">
-          <i className="fab fa-facebook"></i>
-          <i className="fab fa-x-twitter"></i>
-          <i className="fab fa-instagram"></i>
-          <i className="fab fa-youtube"></i>
-          <i className="fab fa-linkedin"></i>
+          <a
+            href="https://www.facebook.com/vinayakamission/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon c icon={faFacebook} />
+          </a>
+          <a
+            href="https://x.com/vmrfdu?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faXTwitter} />
+          </a>
+          <a
+            href="https://www.instagram.com/in.stagram.vmrfdu/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a
+            href="https://www.youtube.com/yourchannel"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
+          <a
+            href="https://www.linkedin.com/school/vmrf/posts/?feedView=all"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
         </div>
       </div>
     </footer>

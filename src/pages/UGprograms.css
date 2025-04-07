@@ -34,6 +34,7 @@
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 24px;
   padding: 20px;
+  margin-top: 30px;
 }
 
 /* Programme Item */
@@ -200,13 +201,15 @@ button:hover {
   transform: scale(1.08);
 }
 
-/* Close Button in Modal */
 .modal-content button {
   background-color: #ff4d4d;
   color: white;
   padding: 10px 16px;
-  border-radius: 12px;
-  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .modal-content button:hover {

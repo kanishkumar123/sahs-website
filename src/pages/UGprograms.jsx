@@ -171,9 +171,7 @@ const UGProgrammes = () => {
               <p>
                 <strong>Fees:</strong> {programme.fees}
               </p>
-              <p>
-                <strong>Intake:</strong> {programme.intake}
-              </p>
+
               <button
                 onClick={(e) => {
                   e.stopPropagation();
