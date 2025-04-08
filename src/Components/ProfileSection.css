@@ -13,8 +13,12 @@
   margin-bottom: 30px;
 }
 
-p {
+.subtitle p {
   text-align: center;
+}
+
+p {
+  text-align: justify;
 }
 
 .profile-header .title {

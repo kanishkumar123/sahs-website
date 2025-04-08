@@ -8,7 +8,7 @@ const ProfileSection = ({ title, subtitle, image, name, roles, points }) => {
     <section className="profile-section">
       <div className="profile-header">
         <h1 className="title">{title}</h1>
-        <p>{subtitle}</p>
+        <p className="subtitle">{subtitle}</p>
       </div>
       <ProfileCard image={image} name={name} roles={roles} />
       <div className="profile-description">

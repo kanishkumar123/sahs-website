@@ -101,12 +101,6 @@ p {
   transform: scale(1.05);
 }
 
-/* Additional Academic Landscape Section */
-.academic-landscape {
-  padding: 50px 20px;
-  background-color: #f8f9fa;
-}
-
 .academic-container {
   max-width: 1200px;
   margin: auto;

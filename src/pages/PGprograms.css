@@ -132,6 +132,10 @@
   border-color: #0056b3; /* Darker blue on hover */
 }
 
+.modal-content p {
+  text-align: justify;
+}
+
 /* Modal Styles */
 .modal-overlay {
   position: fixed;

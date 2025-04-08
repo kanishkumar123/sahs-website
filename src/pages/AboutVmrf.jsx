@@ -36,7 +36,7 @@ const AboutVMRF = () => {
           </p>
         </section>
 
-        <section className="academic-landscape">
+        <section className="about-section">
           <h2>Academic Landscape</h2>
           <p>
             Vinayaka Mission’s Research Foundation (Deemed to be University)

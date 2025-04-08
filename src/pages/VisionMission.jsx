@@ -28,7 +28,7 @@ const VisionMission = () => {
 
       <div className="vision-mission-card">
         <h2 className="heading">QUALITY POLICY</h2>
-        <p>
+        <p className="subtitle">
           <strong>
             Vinayaka Mission’s Research Foundation (Deemed to be University)
             commits to:
