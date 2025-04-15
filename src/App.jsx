@@ -12,7 +12,7 @@ import ScrollToTop from "./utils/ScrollToTop";
 const App = () => {
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
-      <Router basename="/sahs-website">
+      <Router basename="/">
         <ScrollToTop />
         <AppRoutes />
         <ToastContainer

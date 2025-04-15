@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useSwipeable } from "react-swipeable";
 import "./NewsCarousel.css";
 import news1 from "./assets/news1.jpg";
 import news2 from "./assets/news2.jpg";
@@ -43,9 +44,21 @@ const NewsCarousel = () => {
     return () => clearInterval(interval);
   }, []);
 
+  // Swipe handling
+  const handlers = useSwipeable({
+    onSwipedLeft: nextSlide,
+    onSwipedRight: prevSlide,
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
+
   return (
-    <div className="carousel-container">
-      <button className="carousel-btn prev" onClick={prevSlide}>
+    <div className="carousel-container" {...handlers}>
+      <button
+        className="carousel-btn prev"
+        onClick={prevSlide}
+        aria-label="Previous slide"
+      >
         ❮
       </button>
 
@@ -58,7 +71,7 @@ const NewsCarousel = () => {
             <div className="carousel-slide" key={index}>
               <img
                 src={item.image}
-                alt={item.title}
+                alt={item.title || "News Slide"}
                 className="carousel-image"
               />
               <div className="carousel-text">
@@ -70,9 +83,24 @@ const NewsCarousel = () => {
         </div>
       </div>
 
-      <button className="carousel-btn next" onClick={nextSlide}>
+      <button
+        className="carousel-btn next"
+        onClick={nextSlide}
+        aria-label="Next slide"
+      >
         ❯
       </button>
+
+      {/* Pagination dots */}
+      <div className="carousel-dots">
+        {newsData.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${current === index ? "active" : ""}`}
+            onClick={() => setCurrent(index)}
+          ></span>
+        ))}
+      </div>
     </div>
   );
 };

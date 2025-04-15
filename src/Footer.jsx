@@ -88,7 +88,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon c icon={faFacebook} />
+            <FontAwesomeIcon icon={faFacebook} />
           </a>
           <a
             href="https://x.com/vmrfdu?lang=en"

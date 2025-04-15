@@ -26,8 +26,11 @@ import Accreditations from "./pages/Accreditations";
 import VisionMission from "./pages/VisionMission";
 import NewsCarousel from "./NewsCarousel";
 import CounterSection from "./CounterSection";
+import "./App.css"; // Import your CSS file for styling
+import "./HeaderNavbar.css"; // Import the CSS for the new HeaderNavbar component
 
 import NewsAdminForm from "./Components/NewsAdminForm.jsx"; // Import the news admin form
+import useContentOffset from "./utils/useContentOffset.js";
 
 // 🏠 Home layout - use the combined header/navbar component
 const Home = () => (
@@ -57,6 +60,8 @@ const PageLayout = ({ children }) => (
 
 // 🔁 Routes
 const AppRoutes = () => {
+  useContentOffset();
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />

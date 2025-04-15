@@ -1,18 +1,73 @@
-html,
-body {
+:root {
+  --mobile: 576px;
+  --tablet: 768px;
+  --desktop: 992px;
+  --large-desktop: 1200px;
+}
+
+html {
+  font-size: 16px;
   scroll-behavior: smooth;
+}
+
+body {
   margin: 0;
   padding: 0;
-  /* padding-top: 10vh; */
-  width: 100vw;
+  width: 100%;
+  min-height: 100vh;
   overflow-x: hidden;
   font-family: Arial, sans-serif;
+  line-height: 1.5;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Responsive typography */
+@media (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* Responsive layout helpers */
+.container {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }
 
 /* Base styles for the toast container */

@@ -14,13 +14,13 @@ body {
 
 /* Main Container */
 .course-details-container {
-  max-width: 1000px;
-  margin: 40px auto;
+  max-width: 1200px;
+  margin: auto;
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  /* text-align: center; */
+  text-align: center;
 }
 
 /* Tabs Container */

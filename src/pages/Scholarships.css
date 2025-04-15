@@ -5,7 +5,7 @@
   max-width: 1200px; /* Keeps max width */
   height: 600px; /* Fixed height */
   text-align: center;
-  margin: 50px auto; /* Centers the div */
+  margin: 40px auto; /* Centers the div */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow-y: auto; /* Enables scrolling when content exceeds height */
 }

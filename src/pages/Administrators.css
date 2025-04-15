@@ -1,7 +1,7 @@
 /* Centering main container */
 .admin-container {
   max-width: 1200px;
-  margin: 50px auto;
+  margin: auto;
   text-align: center;
   animation: fadeIn 0.8s ease-in-out;
 }
