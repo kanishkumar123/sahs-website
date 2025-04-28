@@ -6,10 +6,18 @@ body {
   padding: 0;
 }
 
-.container {
+.vision-mission-container {
   max-width: 1200px;
-  margin: 50px auto;
+  margin: auto;
+  background: white;
   text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
 }
 
 .title {
@@ -27,7 +35,7 @@ body {
 }
 
 .vision-mission-card {
-  background: #ffffff;
+  background: #f8f9fa;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 8px;

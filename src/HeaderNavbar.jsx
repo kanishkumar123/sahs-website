@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo2 from "./assets/WhatsApp-Image-2024-09-12-at-11.43.13-AM.jpeg";
-import logo3 from "./assets/SAhs.png";
-import logo4 from "./assets/Asset 1 - Copy (1).png";
+
 import "./HeaderNavbar.css";
 
 const HeaderNavbar = () => {
@@ -106,7 +104,7 @@ const HeaderNavbar = () => {
       {/* Top Header */}
       <div className={`top-header-wrapper ${showTop ? "show" : "hide"}`}>
         <div className="top-bar">
-          <p className="top-contact">📞 123456789</p>
+          <p className="top-contact">📞 +91 96773 77025</p>
 
           <div className="marquee-wrapper">
             <div className="marquee-text">
@@ -115,15 +113,23 @@ const HeaderNavbar = () => {
             </div>
           </div>
 
-          <p className="top-email">✉️ admissions@sahs.ac.in</p>
+          <p className="top-email">✉️ director.admissions@vmu.edu.in</p>
         </div>
 
         <div className="glass-container">
           <Link to="/">
             <div className="logo-container">
-              <img src={logo2} alt="AVIT Logo" className="nav-logo" />
-              <img src={logo3} alt="AHS Logo" className="nav-logo" />
-              <img src={logo4} alt="AHS Logo" className="nav-logo2" />
+              <img
+                src="/WhatsApp-Image-2024-09-12-at-11.43.13-AM.jpeg"
+                alt="AVIT Logo"
+                className="nav-logo"
+              />
+              <img src="/SAhs.png" alt="AHS Logo" className="nav-logo" />
+              <img
+                src="/Asset 1 - Copy (1).png"
+                alt="AHS Logo"
+                className="nav-logo2"
+              />
             </div>
           </Link>
         </div>
@@ -197,6 +203,7 @@ const HeaderNavbar = () => {
                         <Link to="/fee-structure?tab=PG">
                           📝 PG Fee Structure
                         </Link>
+                        <Link to="/brochure">📄 Brochure</Link>
                       </div>
                     </div>
                   )}
@@ -251,6 +258,7 @@ const HeaderNavbar = () => {
                         <Link to="/vision-mission">🌟 Vision & Mission</Link>
                         <Link to="/founder">👤 Founder</Link>
                         <Link to="/chancellor">🎓 Chancellor</Link>
+                        <Link to="/pro-chancellor">🎓 Pro Chancellor</Link>
                         <Link to="/administrators">🏛 Administrators</Link>
                         <Link to="/accreditations">
                           📜 Accreditations & Recognitions
@@ -277,7 +285,7 @@ const HeaderNavbar = () => {
       <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
         <div className="sidebar-header">
           <div className="sidebar-logo">
-            <img src={logo3} alt="AHS Logo" className="sidebar-nav-logo" />
+            <img src="/SAhs.png" alt="AHS Logo" className="sidebar-nav-logo" />
           </div>
           <button
             className="close-sidebar"
@@ -359,6 +367,12 @@ const HeaderNavbar = () => {
                           onClick={() => setSidebarOpen(false)}
                         >
                           📝 PG Fee Structure
+                        </Link>
+                        <Link
+                          to="/brochure"
+                          onClick={() => setSidebarOpen(false)}
+                        >
+                          📄 Brochure
                         </Link>
                       </div>
                     </div>
@@ -485,6 +499,12 @@ const HeaderNavbar = () => {
                           onClick={() => setSidebarOpen(false)}
                         >
                           🎓 Chancellor
+                        </Link>
+                        <Link
+                          to="/pro-chancellor"
+                          onClick={() => setSidebarOpen(false)}
+                        >
+                          🎓 Pro Chancellor
                         </Link>
                         <Link
                           to="/administrators"

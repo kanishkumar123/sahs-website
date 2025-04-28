@@ -45,12 +45,14 @@
 .carousel-text h3 {
   font-size: 2rem;
   color: #1d4f91;
+  text-align: center;
   /* margin-bottom: 12px; */
 }
 
 .carousel-text p {
   font-size: 1.1rem;
   color: #444;
+  text-align: center;
 }
 
 .carousel-btn {

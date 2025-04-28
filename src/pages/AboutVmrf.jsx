@@ -9,6 +9,13 @@ const AboutVMRF = () => {
           About Vinayaka Mission’s Research Foundation (VMRF)
         </h1>
 
+        <div className="about-image-wrapper">
+          <img
+            src="/vm-lights.jpeg"
+            alt="VMRF Campus"
+            className="about-image"
+          />
+        </div>
         <section className="about-section">
           <h2>Our Legacy and Growth</h2>
           <p>

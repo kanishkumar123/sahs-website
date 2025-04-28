@@ -1,24 +1,20 @@
 import React, { useState, useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
 import "./NewsCarousel.css";
-import news1 from "./assets/news1.jpg";
-import news2 from "./assets/news2.jpg";
-import news3 from "./assets/news3.png";
 
 const newsData = [
   {
-    image: news1,
-    title: "National Conference 2025",
-    description:
-      "Join us for the National Conference on Education & Research this June.",
+    image: "/news1.jpg",
+    title: "Admissions 2025-2026",
+    description: "Join with SAHS today.",
   },
   {
-    image: news2,
+    image: "/news2.jpg",
     title: "Campus Recruitment Drive",
     description: "Top MNCs are visiting campus. Don't miss the opportunity!",
   },
   {
-    image: news3,
+    image: "/news3.jpg",
     title: "Annual Sports Meet",
     description:
       "Exciting events and competitions await at the annual sports meet.",
@@ -50,18 +46,11 @@ const NewsCarousel = () => {
     onSwipedRight: prevSlide,
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
+    pauseOnHover: true,
   });
 
   return (
     <div className="carousel-container" {...handlers}>
-      <button
-        className="carousel-btn prev"
-        onClick={prevSlide}
-        aria-label="Previous slide"
-      >
-        ❮
-      </button>
-
       <div className="carousel-wrapper">
         <div
           className="carousel-track"
@@ -82,14 +71,6 @@ const NewsCarousel = () => {
           ))}
         </div>
       </div>
-
-      <button
-        className="carousel-btn next"
-        onClick={nextSlide}
-        aria-label="Next slide"
-      >
-        ❯
-      </button>
 
       {/* Pagination dots */}
       <div className="carousel-dots">

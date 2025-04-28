@@ -6,13 +6,13 @@ import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import { ToastContainer } from "react-toastify";
 import { MantineProvider } from "@mantine/core";
-import AppRoutes from "./AppRoutes"; // Import new route config
+import AppRoutes from "./AppRoutes";
 import ScrollToTop from "./utils/ScrollToTop";
 
 const App = () => {
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
-      <Router basename="/">
+      <Router>
         <ScrollToTop />
         <AppRoutes />
         <ToastContainer

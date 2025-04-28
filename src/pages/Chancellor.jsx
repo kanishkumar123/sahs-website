@@ -1,5 +1,5 @@
 import React from "react";
-import chancellorImage from "../assets/Chancellor.jpg";
+
 import ProfileSection from "../Components/ProfileSection";
 
 const ChancellorProfile = () => {
@@ -7,7 +7,7 @@ const ChancellorProfile = () => {
     <ProfileSection
       title="Meet Our Chancellor"
       subtitle="Visionary leadership guiding our academic excellence"
-      image={chancellorImage}
+      image="/Chancellor.jpg"
       name="Dr. A.S. Ganesan"
       roles={[
         "Chancellor - Vinayaka Mission’s Research Foundation",

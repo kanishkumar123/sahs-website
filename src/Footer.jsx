@@ -14,8 +14,13 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-row">
         <div className="footer-top">
+          <h3 className="footer-head">
+            <span>Institution</span>
+          </h3>
           <h2 className="footer-heading">
-            <span>School of Allied Health Sciences</span>
+            <span>
+              School of Allied Health Sciences VMKV Medical College & Hospitals
+            </span>
           </h2>
           <p className="footer-subheading">
             <em>
@@ -26,6 +31,9 @@ const Footer = () => {
           {/* <button className="admission-button">Admission Open 2025-26 →</button> */}
         </div>
         <div className="footer-top">
+          <h3 className="footer-head">
+            <span>University Office</span>
+          </h3>
           <h2 className="footer-heading">
             <span>Vinayaka Missions Research Foundation</span>
           </h2>
@@ -38,8 +46,11 @@ const Footer = () => {
           {/* <button className="admission-button">Admission Open 2025-26 →</button> */}
         </div>
         <div className="footer-top">
+          <h3 className="footer-head">
+            <span>Hospital</span>
+          </h3>
           <h2 className="footer-heading">
-            <span>VMKV Medical College & Hospital</span>
+            <span>VMKV Medical College & Hospitals</span>
           </h2>
           <p className="footer-subheading">
             <em>📍 Chinna Seeragapadi, Salem – 636 308, Tamil Nadu, India</em>

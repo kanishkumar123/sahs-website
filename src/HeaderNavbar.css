@@ -39,7 +39,7 @@ body {
   z-index: 999;
   background-color: #992226;
   color: white;
-  padding: 12px 10px;
+  padding: 20px 18px;
   writing-mode: vertical-rl;
   text-align: center;
   font-weight: 600;
@@ -481,7 +481,7 @@ body {
   }
 
   .nav-logo2 {
-    display: none;
+    height: 60px;
   }
 
   .navbar {
@@ -509,7 +509,7 @@ body {
   }
 
   .nav-logo2 {
-    display: none;
+    height: 50px;
   }
 
   .top-email {
@@ -522,7 +522,7 @@ body {
 
   .enquire-now-btn {
     font-size: 12px;
-    padding: 8px 6px;
+    padding: 18px 16px;
   }
 
   .navbar {
@@ -558,7 +558,7 @@ body {
     height: 30px;
   }
   .nav-logo2 {
-    display: none;
+    height: 30px;
   }
 
   .marquee-wrapper {
@@ -575,8 +575,8 @@ body {
   }
 
   .enquire-now-btn {
-    font-size: 10px;
-    padding: 6px 4px;
+    font-size: 12px;
+    padding: 16px 14px;
   }
   .navbar {
     flex-direction: column;

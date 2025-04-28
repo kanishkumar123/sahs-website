@@ -1,6 +1,5 @@
 import React from "react";
 import ProfileSection from "../Components/ProfileSection";
-import founderImage from "../assets/founder1.png"; // Make sure the image is placed correctly
 
 const founderRoles = [
   "Founder - Vinayaka Mission’s Research Foundation (Deemed to be University)",
@@ -17,7 +16,7 @@ const FounderProfile = () => {
     <ProfileSection
       title="Meet our Founder"
       subtitle="Inspiring leadership that shaped our institution's vision"
-      image={founderImage}
+      image="/founder1.jpg"
       name="Dr. A. Shanmugasundaram"
       roles={founderRoles}
       points={founderPoints}

@@ -30,7 +30,10 @@ import "./App.css"; // Import your CSS file for styling
 import "./HeaderNavbar.css"; // Import the CSS for the new HeaderNavbar component
 
 import NewsAdminForm from "./Components/NewsAdminForm.jsx"; // Import the news admin form
-import useContentOffset from "./utils/useContentOffset.js";
+import useContentOffset from "./utils/useContentOffset.jsx";
+import Logo3D from "./Logo3D.jsx";
+import BrochurePDF from "./pages/BrochurePDF.jsx";
+import ProChancellorProfile from "./pages/ProChancellor.jsx";
 
 // 🏠 Home layout - use the combined header/navbar component
 const Home = () => (
@@ -53,6 +56,7 @@ const PageLayout = ({ children }) => (
     <HeaderNavbar />
     <div className="page-with-nav">
       {children}
+
       <Footer />
     </div>
   </>
@@ -166,6 +170,22 @@ const AppRoutes = () => {
         element={
           <PageLayout>
             <Accreditations />
+          </PageLayout>
+        }
+      />
+      <Route
+        path="/brochure"
+        element={
+          <PageLayout>
+            <BrochurePDF />
+          </PageLayout>
+        }
+      />
+      <Route
+        path="/pro-chancellor"
+        element={
+          <PageLayout>
+            <ProChancellorProfile />
           </PageLayout>
         }
       />

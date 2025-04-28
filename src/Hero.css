@@ -14,7 +14,7 @@
 }
 
 /* Call-to-Action Button */
-.button {
+.admission-button {
   background: linear-gradient(135deg, #00c8ff, #0263f5);
   color: #ffffff;
   border: none;
@@ -25,9 +25,11 @@
   border-radius: 30px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.3);
+  text-decoration: none; /* <-- This removes the underline */
+  display: inline-block;
 }
 
-.button:hover {
+.admission-button:hover {
   transform: translateY(-3px);
   box-shadow: 0px 6px 15px rgba(255, 204, 0, 0.5);
 }

@@ -358,7 +358,7 @@ const PGProgrammes = () => {
                 {programme.degreeLevel || "Undergraduate"}
               </p>
               <p>
-                <strong>Fees:</strong> {programme.fees}
+                <strong>Fees:</strong> {programme.tuition}
               </p>
 
               <button
@@ -393,7 +393,7 @@ const PGProgrammes = () => {
               {selectedProgram.degreeLevel || "Undergraduate"}
             </p>
             <p>
-              <strong>Fees:</strong> {selectedProgram.fees}
+              <strong>Fees:</strong> {selectedProgram.tuition}
             </p>
             <p>
               <strong>Intake:</strong> {selectedProgram.intake}

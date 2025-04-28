@@ -1,7 +1,10 @@
 .profile-section {
   max-width: 1200px;
   margin: auto;
-  padding: 40px;
+  padding-top: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);

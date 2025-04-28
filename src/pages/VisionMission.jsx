@@ -3,7 +3,7 @@ import "./VisionMission.css"; // Import your CSS file
 
 const VisionMission = () => {
   return (
-    <div className="container">
+    <div className="vision-mission-container">
       <h1 className="title">Vinayaka Mission's Research Foundation</h1>
       <p className="subtitle">
         (Deemed to be University under section 3 of the UGC Act 1956)

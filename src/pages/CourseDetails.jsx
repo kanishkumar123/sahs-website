@@ -103,7 +103,7 @@ const courses = {
       duration: "3 + 1 Year Internship",
       tuition: "₹70,000",
       eligibility:
-        "A Pass in 10+2 / H.Sc. or its equivalent examination with subjects of Physics, Chemistry & Biology (Botany & Zoology) or Mathematics.",
+        "A Pass in 10+2 / H.Sc. or its equivalent examination with subjects of Physics, Chemistry & Biology (Botany & Zoology) or Mathematics or Computer Science.",
       overview:
         "Forensic Science Technology applies scientific principles to solve crimes. It includes training in crime scene investigation, evidence collection, forensic pathology, and psychological analysis. Students are trained in both theoretical and practical aspects of forensic science.",
       career:

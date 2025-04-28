@@ -217,7 +217,7 @@ const FeeStructure = () => {
 
       {/* Download PDF Button */}
       <a
-        href={`public/${pdfFileName}`}
+        href={`/${pdfFileName}`}
         download
         className="download-pdf-btn"
         onClick={handleDownload}

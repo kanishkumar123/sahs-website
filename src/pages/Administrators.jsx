@@ -3,17 +3,48 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Administrators.css";
-import image1 from "../assets/istockphoto-1309328823-612x612.jpg";
 
 const administrators = [
-  { name: "Dr. John Doe", position: "Principal", image: image1 },
-  { name: "Prof. Jane Smith", position: "Vice Principal", image: image1 },
-  { name: "Dr. Mark Wilson", position: "Dean of Academics", image: image1 },
-  { name: "Mr. Emily Brown", position: "Head of Admissions", image: image1 },
-  { name: "Dr. Liam Johnson", position: "Controller of Exams", image: image1 },
-  { name: "Prof. Jane Smith", position: "Vice Principal", image: image1 },
-  { name: "Dr. Mark Wilson", position: "Dean of Academics", image: image1 },
-  { name: "Mr. Emily Brown", position: "Head of Admissions", image: image1 },
+  {
+    name: "Dr. John Doe",
+    position: "Principal",
+    image: "/istockphoto-1309328823-612x612.jpg",
+  },
+  {
+    name: "Prof. Jane Smith",
+    position: "Vice Principal",
+    image: "/istockphoto-1309328823-612x612.jpg",
+  },
+  {
+    name: "Dr. Mark Wilson",
+    position: "Dean of Academics",
+    image: "/istockphoto-1309328823-612x612.jpg",
+  },
+  {
+    name: "Mr. Emily Brown",
+    position: "Head of Admissions",
+    image: "/istockphoto-1309328823-612x612.jpg",
+  },
+  {
+    name: "Dr. Liam Johnson",
+    position: "Controller of Exams",
+    image: "/istockphoto-1309328823-612x612.jpg",
+  },
+  {
+    name: "Prof. Jane Smith",
+    position: "Vice Principal",
+    image: "/istockphoto-1309328823-612x612.jpg",
+  },
+  {
+    name: "Dr. Mark Wilson",
+    position: "Dean of Academics",
+    image: "/istockphoto-1309328823-612x612.jpg",
+  },
+  {
+    name: "Mr. Emily Brown",
+    position: "Head of Admissions",
+    image: "/istockphoto-1309328823-612x612.jpg",
+  },
 ];
 
 const Administrators = () => {
