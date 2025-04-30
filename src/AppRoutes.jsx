@@ -34,6 +34,8 @@ import useContentOffset from "./utils/useContentOffset.jsx";
 import Logo3D from "./Logo3D.jsx";
 import BrochurePDF from "./pages/BrochurePDF.jsx";
 import ProChancellorProfile from "./pages/ProChancellor.jsx";
+import HighlightsInstitution from "./HighlightsInstituition.jsx";
+import ExamCalendar from "./pages/ExamCalendar.jsx";
 
 // 🏠 Home layout - use the combined header/navbar component
 const Home = () => (
@@ -41,6 +43,8 @@ const Home = () => (
     <HeaderNavbar />
     <div className="content-wrapper">
       <Hero />
+      <ExamCalendar />
+      <HighlightsInstitution />
       <NewsCarousel />
       <CardSection />
       <CounterSection />

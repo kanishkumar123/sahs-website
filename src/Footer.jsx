@@ -23,10 +23,7 @@ const Footer = () => {
             </span>
           </h2>
           <p className="footer-subheading">
-            <em>
-              📍 Sankari Main Road (NH-47), Ariyanoor, Salem - 636 308,
-              Tamilnadu, India.
-            </em>
+            <em>📍 Chinna Seeragapadi, Salem – 636 308, Tamil Nadu, India</em>
           </p>
           {/* <button className="admission-button">Admission Open 2025-26 →</button> */}
         </div>
@@ -61,17 +58,18 @@ const Footer = () => {
 
       <div className="footer-content">
         <div className="footer-section">
-          <h3>🔗 QUICK LINKS</h3>
+          <h3>🔗 STUDENT OUTCOMES</h3>
           <ul>
             <li>📌 Campus Life</li>
-            <li>📌 Placements</li>
             <li>📌 Examination Calendar</li>
             <li>📌 Graduation Day</li>
+            <li>📌 Alumni</li>
+            <li>📌 Placements</li>
           </ul>
         </div>
 
         <div className="footer-section">
-          <h3>🛠 HELP & SUPPORT</h3>
+          <h3>🛡️ STUDENT WELFARE</h3>
           <ul>
             <li>🚫 Anti-ragging Committee</li>
             <li>⚖️ Grievance Redressal Committee</li>
@@ -81,7 +79,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-section">
-          <h3>📚 MEDIA & RESOURCES</h3>
+          <h3>📚 VOICE OF VINAYAKA</h3>
           <ul>
             <li>📸 SAHS @ Media</li>
             <li>📝 Blogs</li>

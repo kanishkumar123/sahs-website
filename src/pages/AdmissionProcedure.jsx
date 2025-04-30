@@ -65,10 +65,6 @@ const AdmissionProcedure = () => {
               of VMRF-DU. The eligibility criteria will be prescribed by the
               VMRF-DU rules & regulations from time to time.
             </p>
-            <p>
-              <strong>Age:</strong> Candidates should have completed the age of
-              17 years on or before 31st December 2024.
-            </p>
           </div>
         ) : (
           <div>

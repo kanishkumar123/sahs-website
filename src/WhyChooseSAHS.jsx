@@ -59,7 +59,7 @@ const WhyChooseSAHS = () => {
   return (
     <section className="why-choose">
       <div className="container">
-        <h2 className="section-title">Why Choose SAHS?</h2>
+        <h2 className="title">Why Choose SAHS?</h2>
         <p className="section-subtitle">
           Discover what makes SAHS the right choice for your academic and career
           journey.

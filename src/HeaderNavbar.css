@@ -9,7 +9,6 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 
@@ -20,15 +19,15 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 30px;
+  height: 40px;
   width: 100%;
   position: relative;
   z-index: 1000;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .top-bar p {
-  color: #ffffffbe;
+  color: #fff;
 }
 
 /* ===== Enquire Now Button ===== */
@@ -236,7 +235,8 @@ body {
 }
 
 .mega-column a:hover {
-  padding-left: 3px;
+  /* border-radius: 0px; */
+  padding-left: 15px;
   background-color: #007bff;
   color: #fff;
   transform: translateX(4px);
@@ -444,6 +444,74 @@ body {
 /* Hide desktop nav by default on mobile */
 .desktop-nav {
   display: flex;
+}
+
+.submenu-wrapper {
+  position: relative;
+}
+
+/* .submenu-wrapper .nav-link-text-has-dropdown {
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+}
+
+.nav-link-text-has-dropdown {
+  font-weight: 300;
+  display: flex;
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link-text-has-dropdown:hover {
+  padding-left: 15px;
+  background-color: #007bff;
+  color: #fff;
+  transform: translateX(4px);
+} */
+
+.sub-dropdown {
+  position: absolute;
+  top: 0;
+  left: 110%;
+  background: rgba(0, 33, 71, 0.9);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  min-width: 200px;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1001;
+}
+
+.submenu-wrapper:hover .sub-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.sub-dropdown a {
+  font-weight: 300;
+  display: flex;
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-dropdown a:hover {
+  padding-left: 15px;
+  background-color: #007bff;
+  color: #fff;
+  transform: translateX(4px);
 }
 
 /* ===== Responsive Styles ===== */

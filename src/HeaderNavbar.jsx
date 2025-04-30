@@ -83,12 +83,12 @@ const HeaderNavbar = () => {
   }, []);
 
   const menuItems = [
+    { name: "Home", submenu: "" },
     { name: "About Us", submenu: "about" },
     { name: "Admissions", submenu: "admissions" },
     { name: "Academics", submenu: "academics" },
     { name: "Campus Life", submenu: "campus" },
     { name: "Placement", submenu: "" },
-    { name: "Alumni", submenu: "" },
   ];
 
   const toggleSubmenu = (submenu) => {
@@ -104,7 +104,7 @@ const HeaderNavbar = () => {
       {/* Top Header */}
       <div className={`top-header-wrapper ${showTop ? "show" : "hide"}`}>
         <div className="top-bar">
-          <p className="top-contact">📞 +91 96773 77025</p>
+          <p className="top-contact">📞 9677377025</p>
 
           <div className="marquee-wrapper">
             <div className="marquee-text">
@@ -184,7 +184,8 @@ const HeaderNavbar = () => {
                       }`}
                     >
                       <div className="mega-column">
-                        <h3>🎓 UG ADMISSIONS</h3>
+                        {/* <h3>🎓 UG ADMISSIONS</h3> */}
+                        <Link to="/brochure">📄 Brochure</Link>
                         <Link to="/admission-procedure">
                           📜 UG Admission Procedure
                         </Link>
@@ -195,7 +196,7 @@ const HeaderNavbar = () => {
                         <Link to="/scholarships">💰 Scholarship Scheme</Link>
                       </div>
                       <div className="mega-column">
-                        <h3>🎓 PG ADMISSIONS</h3>
+                        {/* <h3>🎓 PG ADMISSIONS</h3> */}
                         <Link to="/admission-procedure?tab=PG">
                           📝 PG Admission Procedure
                         </Link>
@@ -203,7 +204,6 @@ const HeaderNavbar = () => {
                         <Link to="/fee-structure?tab=PG">
                           📝 PG Fee Structure
                         </Link>
-                        <Link to="/brochure">📄 Brochure</Link>
                       </div>
                     </div>
                   )}
@@ -215,7 +215,19 @@ const HeaderNavbar = () => {
                       }`}
                     >
                       <div className="mega-column">
-                        <h3>📚 Programs</h3>
+                        {/* <h3>📚 Programs</h3> */}
+                        <Link to={"/academic-calendar"}>Academic Calendar</Link>
+                        <Link to={"/exam-calendar"}>Examination Calendar</Link>
+                        <Link to={"/academic-program"}>Academic Program</Link>
+                        <Link to={"/value-added-program"}>
+                          Value Added Program
+                        </Link>
+                        <Link to={"/mentorship-program"}>
+                          Mentorship Program
+                        </Link>
+                        <Link to={"/teaching-learning"}>
+                          Teaching & Learning Program
+                        </Link>
                         <Link to="/ug-pos">🎓 Undergraduate (UG)</Link>
                         <Link to="/ug-pos?tab=PG">🎓 Postgraduate (PG)</Link>
                       </div>
@@ -229,7 +241,7 @@ const HeaderNavbar = () => {
                       }`}
                     >
                       <div className="mega-column">
-                        <h3>🏫 Campus Life</h3>
+                        {/* <h3>🏫 Campus Life</h3> */}
                         <Link to="/campus-life">🎭 Life at SAHS</Link>
                         <Link to="/fests">🎉 Fests</Link>
                         <Link to="/campus">🏢 Campus</Link>
@@ -237,7 +249,7 @@ const HeaderNavbar = () => {
                         <Link to="/library">📖 Library</Link>
                       </div>
                       <div className="mega-column">
-                        <h3>🏢 Facilities</h3>
+                        {/* <h3>🏢 Facilities</h3> */}
                         <Link to="/transport">🚌 Transport</Link>
                         <Link to="/amenities">🏥 Other Amenities</Link>
                         <Link to="/gallery">📸 Gallery</Link>
@@ -252,17 +264,26 @@ const HeaderNavbar = () => {
                       }`}
                     >
                       <div className="mega-column">
-                        <h3>🏛 About Us</h3>
-                        <Link to="/about-sahs">📌 About SAHS</Link>
-                        <Link to="/about-vmrf">📌 About VMRF</Link>
-                        <Link to="/vision-mission">🌟 Vision & Mission</Link>
-                        <Link to="/founder">👤 Founder</Link>
-                        <Link to="/chancellor">🎓 Chancellor</Link>
-                        <Link to="/pro-chancellor">🎓 Pro Chancellor</Link>
-                        <Link to="/administrators">🏛 Administrators</Link>
+                        <Link to="/about-sahs">About SAHS</Link>
+                        <Link to="/about-vmrf">About VMRF</Link>
+                        <Link to="/vision-mission">Vision & Mission</Link>
+
+                        <div className="submenu-wrapper">
+                          <a className="nav-link-text-has-dropdown">
+                            University Administrators
+                          </a>
+                          <div className="sub-dropdown">
+                            <Link to="/founder">Founder</Link>
+                            <Link to="/chancellor">Chancellor</Link>
+                            <Link to="/pro-chancellor">Pro Chancellor</Link>
+                          </div>
+                        </div>
+
+                        <Link to="/administrators">SAHS Administrators</Link>
                         <Link to="/accreditations">
-                          📜 Accreditations & Recognitions
+                          Accreditations & Recognitions
                         </Link>
+                        <Link to="/infrastructure">Infrastructure</Link>
                       </div>
                     </div>
                   )}
@@ -322,7 +343,7 @@ const HeaderNavbar = () => {
                       }`}
                     >
                       <div className="submenu-section">
-                        <h3>🎓 UG ADMISSIONS</h3>
+                        {/* <h3>🎓 UG ADMISSIONS</h3> */}
                         <Link
                           to="/admission-procedure"
                           onClick={() => setSidebarOpen(false)}
@@ -349,7 +370,7 @@ const HeaderNavbar = () => {
                         </Link>
                       </div>
                       <div className="submenu-section">
-                        <h3>🎓 PG ADMISSIONS</h3>
+                        {/* <h3>🎓 PG ADMISSIONS</h3> */}
                         <Link
                           to="/admission-procedure?tab=PG"
                           onClick={() => setSidebarOpen(false)}
@@ -385,7 +406,7 @@ const HeaderNavbar = () => {
                       }`}
                     >
                       <div className="submenu-section">
-                        <h3>📚 Programs</h3>
+                        {/* <h3>📚 Programs</h3> */}
                         <Link
                           to="/ug-pos"
                           onClick={() => setSidebarOpen(false)}
@@ -409,7 +430,7 @@ const HeaderNavbar = () => {
                       }`}
                     >
                       <div className="submenu-section">
-                        <h3>🏫 Campus Life</h3>
+                        {/* <h3>🏫 Campus Life</h3> */}
                         <Link
                           to="/campus-life"
                           onClick={() => setSidebarOpen(false)}
@@ -439,7 +460,7 @@ const HeaderNavbar = () => {
                         </Link>
                       </div>
                       <div className="submenu-section">
-                        <h3>🏢 Facilities</h3>
+                        {/* <h3>🏢 Facilities</h3> */}
                         <Link
                           to="/transport"
                           onClick={() => setSidebarOpen(false)}
@@ -469,7 +490,7 @@ const HeaderNavbar = () => {
                       }`}
                     >
                       <div className="submenu-section">
-                        <h3>🏛 About Us</h3>
+                        {/* <h3>🏛 About Us</h3> */}
                         <Link
                           to="/about-sahs"
                           onClick={() => setSidebarOpen(false)}

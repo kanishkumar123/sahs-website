@@ -29,7 +29,7 @@ const CardSection = () => {
           <div className="icon">
             <FaBook size={40} />
           </div>
-          <h3>LIBRARY</h3>
+          <h3>Why choose SAHS</h3>
         </div>
       </div>
 
@@ -57,7 +57,7 @@ const CardSection = () => {
           <div className="icon">
             <FaNewspaper size={40} />
           </div>
-          <h3>NEWS</h3>
+          <h3>Recruiters</h3>
         </div>
       </div>
     </div>

@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
 
-* {
-  font-family: "Inter", sans-serif !important;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 /* General Styles */
 body {
   background-color: #f8f9fa;
